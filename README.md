@@ -1,6 +1,6 @@
 # Практична робота "Створення і використання статичних методів"
 ## №3. Знайти кількість робочих днів (субота і неділя - вихідні) у проміжку між двома заданими датами
-* Код програми
+* Код класу Exercise
 ```java
 package domain;
 
@@ -58,9 +58,24 @@ public class Exercise {
 
 }
 ```
+
+* Код класу TestResult
+
+```java
+package test;
+
+import domain.Exercise;
+
+public class TestResult {
+    public static void main(String[] args) {
+        Exercise count = new Exercise();
+        count.setfirstdate(2022, 12, 12); //
+        count.setseconddate(2022, 12, 31);
+        count.CountingWeekends();
+
+    }
+}
+```
 ----
-* Результат роботи
-<img src="https://github.com/ppc-ntu-khpi/identifiers-types-starter/blob/master/Result.png" width="100%"/>
-
-
-## Список завдань
+## Результат роботи програми
+<img src="Result.png">
