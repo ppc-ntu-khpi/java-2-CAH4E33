@@ -41,8 +41,8 @@ public class Exercise {
         this.seconddate = LocalDate.of(y, m, d);
     }
 
-    /**
-     * Метод для підрахунку та виводу кількості вихідних днів
+   /**
+     * Метод для підрахунку та виводу кількості робочих днів
      */
    public void CountingDays() {
         for (LocalDate date = firstdate; date.isBefore(seconddate.plusDays(1)); date = date.plusDays(1)) {
