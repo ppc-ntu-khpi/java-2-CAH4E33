@@ -38,18 +38,18 @@ public class Exercise {
     }
 
     /**
-     * Метод для підрахунку та виводу кількості вихідних днів
+     * Метод для підрахунку та виводу кількості робочих днів
      */
-    public void CountingWeekends() {
+    public void CountingDays() {
         for (LocalDate date = firstdate; date.isBefore(seconddate.plusDays(1)); date = date.plusDays(1)) {
-            if (date.getDayOfWeek() == DayOfWeek.SUNDAY || date.getDayOfWeek() == DayOfWeek.SATURDAY) {
+            if (date.getDayOfWeek() != DayOfWeek.SUNDAY && date.getDayOfWeek() != DayOfWeek.SATURDAY) {
 
                 count++;
             }
 
         }
 
-        System.out.println("Number of weekends between dates: " + count);
+        System.out.println("Number of days between dates: " + count);
     }
 
 }

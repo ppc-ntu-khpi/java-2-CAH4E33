@@ -7,7 +7,7 @@ public class TestResult {
         Exercise count = new Exercise();
         count.setfirstdate(2022, 12, 12); //
         count.setseconddate(2022, 12, 31);
-        count.CountingWeekends();
+        count.CountingDays();
 
     }
 }
